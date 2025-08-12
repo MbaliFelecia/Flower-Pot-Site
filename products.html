@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Izimbali handmade planters</title>
+    <meta name="description" content="Browse Izimbali's handcrafted flower pots and home decor.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <nav class="nav-container">
+            <div class="nav-brand">
+                <div class="logo"></div>
+                <span class="brand-name">Izimbali</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link active">Products</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="btn btn-hero" onclick="openEnquiryForm()">Request a Quote</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container" style="padding: 3rem 1rem;">
+            <h1 class="hero-title" style="margin-bottom: 1.5rem;">Products</h1>
+            <p style="color: hsla(24, 30%, 10%, 0.7); margin-bottom: 2rem; max-width: 65ch;">
+                Each piece is made to order. Sizes and finishes can be customised on request.
+            </p>
+            
+            <div class="products-grid">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/glass.png">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Coupe Elegance</h3>
+                        <p class="product-description">A sleek, stemless coupe-shaped planter that brings timeless sophistication to your plants. Perfect for air plants, petite succulents, or delicate blooms, it adds a touch of modern glamour to any space.</p>
+                        <div class="product-footer">
+                            <span class="product-price">From R250</span>
+                            <button class="btn btn-brand btn-sm" onclick="openEnquiryForm('terracotta-classic')">Enquire</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/lavaPalet.png">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Lava Palet</h3>
+                        <p class="product-description">A bold, textured pot with fiery, molten patterns reminiscent of cooled volcanic rock, accented with organic curves that give it a warm, earthy personality..</p>
+                        <div class="product-footer">
+                            <span class="product-price">From R320</span>
+                            <button class="btn btn-brand btn-sm" onclick="openEnquiryForm('sage-glaze')">Enquire</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/midnightBloom.png">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Midnight Bloom</h3>
+                        <p class="product-description">A sleek, deep-toned pot with a smooth, modern finish that highlights the rich contrast between dark ceramic and vibrant plant life. Perfect for creating a dramatic, elegant focal point.</p>
+                        <div class="product-footer">
+                            <span class="product-price">From R420</span>
+                            <button class="btn btn-brand btn-sm" onclick="openEnquiryForm('duo-tone-vase')">Enquire</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/oceanRipple.png">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Ocean Ripple</h3>
+                        <p class="product-description">Flowing, wave-like curves mimic ocean swells, giving this pot a dynamic, fluid look. Ideal as a bold focal piece for both indoor and outdoor plants.</p>
+                        <div class="product-footer">
+                            <span class="product-price">From R280</span>
+                            <button class="btn btn-brand btn-sm" onclick="openEnquiryForm('minimalist-bowl-set')">Enquire</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/petalWave.png">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Petal Wave</h3>
+                        <p class="product-description">Soft, petal-like folds create a blooming effect, perfect for adding elegance to indoor spaces. Its sculpted edges give it a gentle yet artistic look.</p>
+                        <div class="product-footer">
+                            <span class="product-price">From R280</span>
+                            <button class="btn btn-brand btn-sm" onclick="openEnquiryForm('rustic-garden-planter')">Enquire</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/basket.png">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Basket</h3>
+                        <p class="product-description">Textured woven finish for rustic warmth. Great for herbs or wildflowers, blending farmhouse appeal with natural durability.</p>
+                        <div class="product-footer">
+                            <span class="product-price">From R150</span>
+                            <button class="btn btn-brand btn-sm" onclick="openEnquiryForm('artistic-statement-piece')">Enquire</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-section">
+                <h3 class="footer-title">Izimbali</h3>
+                <p class="footer-text">Handmade flower pots & home decor crafted with heart.</p>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="story-link">Home</a></li>
+                    <li><a href="products.html" class="story-link">Products</a></li>
+                    <li><a href="about.html" class="story-link">About</a></li>
+                    <li><a href="contact.html" class="story-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Contact</h4>
+                <p class="footer-text">(+27)79 965 7145</p>
+                <a href="mailto:ramakgashambali@gmail.com" class="story-link">ramakgashambali@gmail.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Izimbali. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Enquiry Modal -->
+    <div id="enquiry-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Send an enquiry</h2>
+                <span class="close" onclick="closeEnquiryForm()">&times;</span>
+            </div>
+            <form id="enquiry-form" class="enquiry-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Optional">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us what you have in mind..."></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-brand">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

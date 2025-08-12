@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Izimbali</title>
+    <meta name="description" content="Learn about Izimbali's craft and story.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <nav class="nav-container">
+            <div class="nav-brand">
+                <div class="logo"></div>
+                <span class="brand-name">Izimbali</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="btn btn-hero" onclick="openEnquiryForm()">Request a Quote</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container" style="padding: 3rem 1rem;">
+            <div style="display: grid; gap: 2rem; grid-template-columns: 1fr; align-items: start;">
+                <div style="max-width: 768px;">
+                    <h1 class="hero-title" style="margin-bottom: 1rem;">Our story</h1>
+                    <p style="color: hsla(24, 30%, 10%, 0.7); line-height: 1.75; margin-bottom: 1rem;">
+                        Izimbali means "flowers". I handcraft planters and decor that honour nature's textures and forms. Every vessel is shaped slowly and intentionally, embracing the small variations that make each piece one of a kind.
+                    </p>
+                    <p style="color: hsla(24, 30%, 10%, 0.7); line-height: 1.75; margin-bottom: 2rem;">
+                        I work in small batches from my home in Pretoria. Custom orders are welcome—sizes, finishes and sets can be tailored for your space.
+                    </p>
+                    
+                    <div style="background: var(--card); border-radius: 0.75rem; border: 1px solid var(--border); padding: 1.5rem; box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.1);">
+                        <h2 style="font-weight: 600; margin-bottom: 0.5rem; font-size: 1.125rem;">Materials & finishes</h2>
+                        <ul style="list-style: disc; padding-left: 1.25rem; color: hsla(24, 30%, 10%, 0.8);">
+                            <li style="margin-bottom: 0.25rem;">Cement</li>
+                            <li style="margin-bottom: 0.25rem;">Fabric</li>
+                            <li style="margin-bottom: 0.25rem;">Sand</li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-top: 2rem; background: var(--card); border-radius: 0.75rem; border: 1px solid var(--border); padding: 1.5rem; box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.1);">
+                        <div class="image-placeholder" style="width: 100%;">
+                            <img src="images/myCollection.png" alt="Collection" style="width: 100%; height: auto; display: block; border-radius: 0.5rem;">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- About the Owner Section -->
+    <section style="padding: 3rem 1rem; background: var(--card); border-radius: 0.75rem; border: 1px solid var(--border); box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.1); max-width: 1200px; margin: 2rem auto;">
+            <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; align-items: center;">
+        
+        <!-- Owner Image -->
+                <div style="max-width: 300px; margin: 0 auto;">
+                    <img src="images/owner.png" alt="Owner of Izimbali" style="width: 100%; border-radius: 0.75rem; object-fit: cover;">
+                </div>
+        
+        <!-- Owner Bio -->
+            <div>
+                <h2 style="font-weight: 600; margin-bottom: 0.5rem; font-size: 1.5rem;">Meet the Maker</h2>
+                    <p style="color: hsla(24, 30%, 10%, 0.7); line-height: 1.75;">
+                    Hi, I’m Mbali — the hands and heart behind Izimbali. My journey started with a love for nature’s textures and a passion for creating something lasting and beautiful. 
+                    Each pot I make is a reflection of my dedication to craftsmanship, sustainability, and adding warmth to every space.  
+                    Whether it’s for your home, garden, or a special gift, I believe in creating pieces that tell a story and bring joy.
+                    </p>
+            </div>
+        
+            </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-section">
+                <h3 class="footer-title">Izimbali</h3>
+                <p class="footer-text">Handmade flower pots & home decor crafted with heart.</p>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="story-link">Home</a></li>
+                    <li><a href="products.html" class="story-link">Products</a></li>
+                    <li><a href="about.html" class="story-link">About</a></li>
+                    <li><a href="contact.html" class="story-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Contact</h4>
+                <p class="footer-text">(+27)79 965 7145</p>
+                <a href="mailto:ramakgashambali@gmail.com" class="story-link">ramakgashambali@gmail.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Izimbali. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Enquiry Modal -->
+    <div id="enquiry-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Send an enquiry</h2>
+                <span class="close" onclick="closeEnquiryForm()">&times;</span>
+            </div>
+            <form id="enquiry-form" class="enquiry-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Optional">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us what you have in mind..."></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-brand">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
